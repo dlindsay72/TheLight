@@ -12,6 +12,8 @@
 		7B55B2701F8D05ED00BAE402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B55B26E1F8D05ED00BAE402 /* Main.storyboard */; };
 		7B55B2721F8D05ED00BAE402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B55B2711F8D05ED00BAE402 /* Assets.xcassets */; };
 		7B55B2751F8D05ED00BAE402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B55B2731F8D05ED00BAE402 /* LaunchScreen.storyboard */; };
+		7B55B27F1F8D086A00BAE402 /* SwitchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55B27E1F8D086A00BAE402 /* SwitchStatus.swift */; };
+		7B55B2811F8D08A000BAE402 /* Togglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55B2801F8D08A000BAE402 /* Togglable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7B55B2711F8D05ED00BAE402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B55B2741F8D05ED00BAE402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B55B2761F8D05ED00BAE402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B55B27E1F8D086A00BAE402 /* SwitchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchStatus.swift; sourceTree = "<group>"; };
+		7B55B2801F8D08A000BAE402 /* Togglable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Togglable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		7B55B2691F8D05ED00BAE402 /* TheLight */ = {
 			isa = PBXGroup;
 			children = (
+				7B55B27D1F8D084C00BAE402 /* Protocols */,
+				7B55B27C1F8D084400BAE402 /* Enums */,
 				7B55B26A1F8D05ED00BAE402 /* AppDelegate.swift */,
 				7B55B26C1F8D05ED00BAE402 /* ViewController.swift */,
 				7B55B26E1F8D05ED00BAE402 /* Main.storyboard */,
@@ -62,6 +68,22 @@
 				7B55B2761F8D05ED00BAE402 /* Info.plist */,
 			);
 			path = TheLight;
+			sourceTree = "<group>";
+		};
+		7B55B27C1F8D084400BAE402 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7B55B27E1F8D086A00BAE402 /* SwitchStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		7B55B27D1F8D084C00BAE402 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7B55B2801F8D08A000BAE402 /* Togglable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			files = (
 				7B55B26D1F8D05ED00BAE402 /* ViewController.swift in Sources */,
 				7B55B26B1F8D05ED00BAE402 /* AppDelegate.swift in Sources */,
+				7B55B27F1F8D086A00BAE402 /* SwitchStatus.swift in Sources */,
+				7B55B2811F8D08A000BAE402 /* Togglable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
